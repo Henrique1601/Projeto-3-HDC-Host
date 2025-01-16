@@ -1,0 +1,457 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+  transition: 0.5s;
+}
+/* Nav */
+nav{
+
+  background-color: #232A31;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 120px;
+  padding: 0px 50px;
+  flex-direction: row-reverse;  
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+
+nav img{
+  width: 100px;
+  height: 100px;
+}
+
+/* Nav + links */
+.main-links-div{
+  display: flex;
+  padding: 0px auto;
+  font-size: 25px;
+  font-weight: bold;  
+  text-transform: uppercase;
+  gap: 30px;
+  align-items: center;
+  width: fit-content;
+  height: fit-content;
+}
+
+.main-links-div button{
+  color: rgb(255, 255, 255);
+  background-color: rgb(43, 42, 42);
+  text-decoration: none;
+  margin-left:20px;
+  height: 75px;
+  width: 140px;
+  cursor: pointer;
+  font-size: 22px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  transition: 0.5s ease-in-out;
+}
+
+.main-links-div button:hover{
+  background-color: #23BC60;
+  transition: 0.5s ease-in-out; 
+}
+/* HEader  */
+header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: fit-content;
+}
+.header-content{
+  background-image: url("./img/mainbanner.png");
+  width: 100%;
+  height: 45vh;
+  background-size: cover;
+  background-position: center;
+  transition: 0.5s ease-in-out;
+}
+
+.header-content h1,
+.header-content p
+{
+  position: absolute;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.header-content h1{
+  top: 35%;
+  font-size: 70px;
+}
+.header-content p{
+  font-size: 30px;
+  top: 50%;
+  width: 70%;
+  
+}
+
+/* Section Sobre*/
+  .Sobre-main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 7rem;
+  padding: 20px ;
+}
+
+.sobre-content{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+  padding: 0px 90px;
+}
+.sobre-content h2,
+.sobre-content p{
+  text-align: center;
+}
+.sobre-content h2{
+  font-size: 35px;
+  font-weight: bold;
+  color: #23BC60;
+  font-family: "Poppins", serif;
+}
+.sobre-content p{
+  font-size: 22px;
+  font-family: "Poppins", serif;
+  text-align: justify;
+}
+
+.sobre-content img{
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  padding: 10px;
+}
+
+.Seg-img,
+.Per-img,
+ .Sup-img{
+  display: block;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  top: 56%;
+}
+.Seg-img{
+  left: 17%;
+}
+
+.Per-img{
+  right: 47%;
+}
+
+.Sup-img{
+  right:17%;
+}
+
+/* Section Plans */
+
+.Main-plains{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7rem;
+  height: 100%;
+}
+.section-content{
+  display: block;
+  text-align: center;
+  gap: 40px;
+  width: 100%;
+  height: 100%;
+}
+
+
+.plans-title{
+  display: inline-block;
+  padding-bottom: 40px;
+}
+
+.plans-title h2,
+.plans-title p{
+  text-align: center;
+  font-family: "Poppins", serif;
+}
+.plans-title h2{
+  font-size: 50px;
+  font-weight: bold; 
+  padding: 1px;
+}
+
+.plans-title p{
+  font-size: 35px;
+}
+
+.plans{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+  height: 800px;
+}
+
+.plan{
+  display: block;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: fit-content;
+  text-align: center;
+  background-color: rgb(177, 177, 177);
+} 
+
+.plan-title {
+background-color: #232A31;
+position: relative;
+z-index: 1;
+}
+
+.plan h3{
+  padding: 60px;
+  height: 70px;
+  font-size: 30px;
+  font-family: "Poppins", serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+}
+
+
+.plans-preco{
+  position: absolute;
+  background-color: #2cc762;
+  color: white;
+  border-radius: 100px;
+  width: 140px;
+  height: 140px;
+  line-height: 120px;
+  left: 30%;
+  top: -15%;
+  font-size: 25px;
+  text-align: center;
+  transition: 0.5s ease-in-out;
+  z-index: 2;
+}
+
+.plan p{
+  text-align: center;
+  font-size: 20px;
+  font-family: "Poppins", serif;
+  padding: 10px;
+}
+
+.btn-plan{
+background-color: #2CC762;
+}
+.btn-plan-best{
+background-color:#F45C57 ;
+}
+
+.btn-plan,
+ .btn-plan-best{
+  cursor: pointer;
+  color: white;
+  border: none;
+  font-size: 30px;
+  height: 75px;
+  width: 100%;
+  text-transform: uppercase;
+  transition: 0.5s ease-in-out;
+  font-family: "Poppins", serif;
+  margin-top: 60px;
+
+}
+
+
+ /* Pesquisa */
+.searchdomain-container{
+  background-color: #34454E;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0px;
+  height: 600px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-family: "Poppins", serif;
+  position: relative;
+}
+.search{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+.searchdomain-container h2{
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.searchdomain-container p{
+  font-size: 25px;
+}
+
+.searchdomain-container input{
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  height: 85px;
+  border: none;
+  border-radius: 5px;
+  padding: 0px 15px;
+  margin-top: 30px;
+  font-size: 25px;
+  font-family: "Poppins", serif;
+
+}
+
+.searchdomain-container button{
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: white;
+  background-color: #23BC60;
+  border: none;
+  font-size: 25px;
+  height: 80px;
+  width: 300px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: 0.5s ease-in-out;
+  font-family: "Poppins", serif;
+
+}
+
+/* Footer */
+
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0px;
+  height: 600px;
+  width: 110%;
+  text-align: center;
+  font-family: "Poppins", serif;
+  position: relative;
+
+}
+
+.Contact-footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;  
+}
+
+.Contact-footer h2{
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.Contact-footer p{
+  font-size: 25px;
+}
+
+.Contact-footer input{
+  align-items: center;
+  width: 350px;
+  height: 85px;
+  border-radius: 5px;
+  padding: 0px 15px;
+  margin-top: 30px;
+  font-size: 20px;
+  font-family:"Poppins", serif;
+}
+.dados{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 40px;
+  width: 100%;
+  height: 100%;
+}
+
+.Contact-footer textarea{
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
+  padding: 15px;
+  margin-top: 30px;
+  font-size: 20px;
+  font-family: "Poppins", serif;
+}
+
+.Contact-footer input[type="submit"]{
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: white;
+  background-color: #23BC60;
+  border: none;
+  font-size: 25px;
+  height: 80px;
+  width: 350px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: 0.5s ease-in-out;
+  font-family: "Poppins", serif;
+}
+
+/* Hover */
+.searchdomain-container button:hover,
+ .btn-plan:hover,
+ .btn-plan-best:hover{
+  transform: scale(1.02);
+  border-radius: 5px;
+}
+
+.searchdomain-container button:hover,
+ .btn-plan:hover{
+  background-color: #F45C57; 
+}
+
+.btn-plan-best:hover{
+  background-color: #23BC60;
+}
+.Contact-footer input[type="submit"]:hover{
+  background-color: #F45C57;
+  transform: scale(1.02);
+}
+
+
+/* Media Queries */
